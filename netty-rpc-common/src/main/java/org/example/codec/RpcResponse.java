@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class RpcResponse implements Serializable {
     private String requestId;
-    private String err;
+    private String err = "fail";
     private Object result;
 
     public String getRequestId() {

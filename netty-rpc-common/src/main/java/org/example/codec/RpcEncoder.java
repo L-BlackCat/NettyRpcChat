@@ -7,11 +7,11 @@ import org.example.logger.Debug;
 import org.example.serializer.Serializer;
 
 
-public class RpcEncode extends MessageToByteEncoder {
+public class RpcEncoder extends MessageToByteEncoder {
     private Class<?> genericClass;
     private Serializer serializer;
 
-    public RpcEncode(Class<?> genericClass, Serializer serializer) {
+    public RpcEncoder(Class<?> genericClass, Serializer serializer) {
         this.genericClass = genericClass;
         this.serializer = serializer;
     }

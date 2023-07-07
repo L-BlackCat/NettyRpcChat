@@ -55,4 +55,8 @@ public class CuratorClient {
     public void deletePath(String path) throws Exception {
         client.delete().forPath(path);
     }
+
+    public void close(){
+        client.close();
+    }
 }

@@ -3,10 +3,10 @@ package org.example.logger;
 import org.apache.log4j.Logger;
 
 public class Debug {
-    private static Logger loggerInfo = Logger.getLogger("LOGGER");
-    private static Logger loggerDebug = Logger.getLogger("LOGGER");
-    private static Logger loggerError = Logger.getLogger("LOGGER");
-    private static Logger loggerWarn = Logger.getLogger("LOGGER");
+    private static final Logger loggerInfo = Logger.getLogger("LOGGER");
+    private static final Logger loggerDebug = Logger.getLogger("LOGGER");
+    private static final Logger loggerError = Logger.getLogger("LOGGER");
+    private static final Logger loggerWarn = Logger.getLogger("LOGGER");
 
 
     public enum  LEVEL{

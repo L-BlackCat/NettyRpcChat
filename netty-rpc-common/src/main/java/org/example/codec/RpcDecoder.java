@@ -8,13 +8,13 @@ import org.example.serializer.Serializer;
 
 import java.util.List;
 
-public class RpcDecode extends ReplayingDecoder {
+public class RpcDecoder extends ReplayingDecoder {
 
     private Class<?> genericClass;
     private Serializer serializer;
 
 
-    public RpcDecode(Class<?> genericClass, Serializer serializer) {
+    public RpcDecoder(Class<?> genericClass, Serializer serializer) {
         this.genericClass = genericClass;
         this.serializer = serializer;
     }

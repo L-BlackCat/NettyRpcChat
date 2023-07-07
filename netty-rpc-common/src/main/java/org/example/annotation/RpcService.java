@@ -13,5 +13,5 @@ public @interface RpcService {
 
     Class<?> value();
 
-    String version();
+    String version() default "";
 }
